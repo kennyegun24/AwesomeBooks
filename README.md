@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 2. Clone this repo in your terminal or git bash using the command
 
    ```
-   git@github.com:NgozikaNwocha/AwesomeBooks.git
+   git@github.com:KennyEgun/AwesomeBooks.git
    ```
 
 3. run `npm install ` to install all the necessary dependencies including the linters
@@ -51,7 +51,7 @@ These were linter tests mainly
 
 👤 **Ngozika Nwocha**
 
-- GitHub: [NgozikaNwocha](https://github.com/githubhandle)
+- GitHub: [NgozikaNwocha](https://github.com/NgozikaNwocha)
 
 
 👤 **Selma Ndapanda**
