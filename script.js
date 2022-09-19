@@ -22,14 +22,11 @@ function populate(book) {
   const bookTitle = document.createElement('td');
   const bookAuthor = document.createElement('td');
   const removeBtn = document.createElement('button');
-  const ruley = document.createElement('hr');
   bookTitle.innerText = book.title;
   bookAuthor.innerText = book.author;
   removeBtn.innerText = 'Remove';
-  row.appendChild(bookTitle);
-  row.appendChild(bookAuthor);
-  row.appendChild(removeBtn);
-  library.appendChild(row, ruley);
+  row.append(bookTitle, bookAuthor, removeBtn);
+  library.append(row);
   removeBtn.addEventListener('click', () => {
     removeBtn.parentElement.remove();
     removeBook(book.id);
@@ -39,7 +36,7 @@ bookList.forEach(populate);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (title.value !== '' || author.value !== '') {
+  if (title.value !== '' && author.value !== '') {
     addBook();
     populate(book);
     form.reset();
