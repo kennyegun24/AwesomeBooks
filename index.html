@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome-Books</title>
+    <title>Awesome Books</title>
 </head>
 <body>
-    <div><h1>Awesome Books</h1></div>
-
+    <h1>Awesome Books</h1>
     <table>
         <tr>
             <th>Title</th>
@@ -17,17 +16,13 @@
         </tr>
         <tbody id="library">
         </tbody>
-
-    <form class="bookForm">
-        <input type="text" name="title" class="title" id="title" placeholder="Title">
-        <br>
-        <br>
-        <input type="text" id="author" name="author" class="author" placeholder="Author">
-        <br>
-        <br>
-        <button type="submit" class="add"> Add</button>
+    </table>
+    <form id="book-form" action="#">
+        <input id="title" type="text" placeholder="Title"> <br>
+        <input id="author" type="text" placeholder="Author"><br>
+        <input id="add" type="submit" value="Add">
     </form>
-
     <script src="script.js"></script>
 </body>
 </html>
+
