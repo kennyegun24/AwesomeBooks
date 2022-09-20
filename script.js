@@ -7,8 +7,8 @@ class Book {
 class UI {
   static displayBooks() {
       const books = Store.getBooks();
-      books.forEach((book) => UI.addBookToList(book))
-  }
+      books.forEach((book) => UI.addBookToList(book));
+  };
   static addBookToList (book) {
       const books = document.querySelector('.books');
       const newBook = document.createElement('div');
@@ -25,7 +25,7 @@ class UI {
       <hr class="hr">
       </div>
       `;
-      newBook.classList.add('newBook')
+      newBook.classList.add('newBook');
       books.appendChild(newBook);
   }
   static deleteBook(el) {
@@ -34,24 +34,24 @@ class UI {
       }
   }
   static clearFields() {
-      document.querySelector('.title').value = ''
-      document.querySelector('.author').value = ''
-  }
+      document.querySelector('.title').value = '';
+      document.querySelector('.author').value = '';
+  };
 }
 // STORE CLASS
 class Store {
   static getBooks() {
       let books;
       if(localStorage.getItem('books') === null){
-          books = []
+          books = [];
       }else{
           books = JSON.parse(localStorage.getItem('books'))
       }
-      return books
+      return books;
   }
   static addBook(book) {
       const books = Store.getBooks()
-      books.push(book)
+      books.push(book);
       localStorage.setItem('books', JSON.stringify(books))
   }
   static removeBook(book) {
