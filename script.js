@@ -3,19 +3,19 @@ const author = document.querySelector('#author');
 const form = document.getElementById('book-form');
 const library = document.getElementById('library');
 let book;
-let bookList = JSON.parse(localStorage.getItem('bookList')) || [];
+let books = JSON.parse(localStorage.getItem('books')) || [];
 function addBook() {
   book = {
     title: title.value,
     author: author.value,
     id: Math.floor(Math.random() * 1000000),
   };
-  bookList.push(book);
-  localStorage.setItem('bookList', JSON.stringify(bookList));
+  books.push(book);
+  localStorage.setItem('books', JSON.stringify(books));
 }
 function removeBook(id) {
-  bookList = bookList.filter((books) => books.id !== id);
-  localStorage.setItem('bookList', JSON.stringify(bookList));
+  books = books.filter((book) => book.id !== id);
+  localStorage.setItem('books', JSON.stringify(books));
 }
 function populate(book) {
   const row = document.createElement('tr');
@@ -32,7 +32,7 @@ function populate(book) {
     removeBook(book.id);
   });
 }
-bookList.forEach(populate);
+books.forEach(populate);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
