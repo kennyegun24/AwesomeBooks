@@ -70,7 +70,7 @@ e.preventDefault();
   //get form values
   const titleInput = document.querySelector('.title').value
   const authorInput = document.querySelector('.author').value
-  const book = new Book(titleInput)
+  const book = new Book(titleInput, authorInput)
   console.log(book)
   //ADD BOOK TO LIST
   UI.addBookToList(book)
