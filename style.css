@@ -1,7 +1,6 @@
 * {
   padding: 0;
-  margin: 0 auto;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 .awesomeBooks {
@@ -14,7 +13,7 @@
   justify-content: space-between;
   padding: 5px 5%;
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .books {
@@ -28,34 +27,40 @@
 }
 
 .btn {
-  float: right;
+  display: flex;
+  justify-content: right;
+}
+
+.add {
+  padding: 5px;
+}
+
+.formHeading {
+  text-align: center;
 }
 
 .bookTitleAuthor {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  gap: 10px;
-  margin-left: 12px;
-}
-
-.by {
-  font-family: sans-serif;
-  font-weight: 600;
   font-size: 14px;
 }
 
-#title {
+.title {
   width: 100%;
+  padding: 3px;
 }
 
-#author {
+.author {
   width: 100%;
+  padding: 3px;
 }
 
 .delete {
   padding: 2px 2px;
-  margin-right: 12px;
+}
+
+.bookSmallDiv {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 .newBook:nth-child(even) {
@@ -64,4 +69,8 @@
 
 .newBook:nth-child(odd) {
   background-color: #eee;
+}
+
+.bookSmallDiv p {
+  font-size: 12px;
 }
