@@ -1,7 +1,7 @@
 class Book {
   constructor (title, author) {
-      this.title = title
-      this.author = author
+      this.title = title;
+      this.author = author;
   }
 }
 class UI {
@@ -15,9 +15,10 @@ class UI {
       newBook.innerHTML = `
       <div>
       <div class="bookDiv">
-      <div>
-      <h4 id="title" class="bookTitleAuthor">${book.title}</h4>
-      <h4 id="author" class="bookTitleAuthor">${book.author}</h4>
+      <div class="bookTitleAuthor">
+      <h4 id="title">"${book.title}"</h4>
+      <p class="by">by</p>
+      <h4 id="author" >${book.author}</h4>
       </div>
       <button class="delete">Remove</button>
       </div>
@@ -70,7 +71,7 @@ e.preventDefault();
   //get form values
   const titleInput = document.querySelector('.title').value
   const authorInput = document.querySelector('.author').value
-  const book = new Book(titleInput)
+  const book = new Book(titleInput, authorInput)
   console.log(book)
   //ADD BOOK TO LIST
   UI.addBookToList(book)
