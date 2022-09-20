@@ -15,7 +15,7 @@ class UI {
       newBook.innerHTML = `
       <div>
       <div class="bookDiv">
-      <h4 id="title" class="bookTitleAuthor">${book.title}</h4>
+      <h4 id="title" class="bookTitleAuthor">${book.title} &nbap; by &nbsp; ${book.author}</h4>
       <button class="delete">Remove</button>
       </div>
       <hr class="hr">
