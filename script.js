@@ -72,7 +72,6 @@ e.preventDefault();
   const titleInput = document.querySelector('.title').value
   const authorInput = document.querySelector('.author').value
   const book = new Book(titleInput, authorInput)
-  console.log(book)
   //ADD BOOK TO LIST
   UI.addBookToList(book)
   //ADD BOOK TO STORE
