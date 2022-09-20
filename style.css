@@ -28,8 +28,7 @@
 }
 
 .btn {
-  display: flex;
-  justify-content: right;
+  float: right;
 }
 
 .bookTitleAuthor {
@@ -43,7 +42,6 @@
 .by {
   font-family: sans-serif;
   font-weight: 600;
-
   font-size: 14px;
 }
 
