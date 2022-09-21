@@ -19,13 +19,12 @@ document.querySelector('.bookForm').addEventListener('submit', (e) => {
   // get form values
   const titleInput = document.querySelector('.title').value;
   const authorInput = document.querySelector('.author').value;
-  const book = new Book(titleInput, authorInput);
-  // ADD BOOK TO LIST
-  UI.addBookToList(book);
-  // ADD BOOK TO STORE
-  Store.addBook(book);
-  // CLEAR FIELDS
-  UI.clearFields();
+  if (titleInput !== '' && authorInput !== '') {
+    const book = new Book(titleInput, authorInput);
+    UI.addBookToList(book);
+    Store.addBook(book);
+    UI.clearFields();
+  }
 });
 // EVENT DELETE
 document.querySelector('.books').addEventListener('click', (e) => {
