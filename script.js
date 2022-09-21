@@ -24,6 +24,9 @@ document.querySelector('.bookForm').addEventListener('submit', (e) => {
     UI.addBookToList(book);
     Store.addBook(book);
     UI.clearFields();
+  } else {
+    // eslint-disable-next-line no-alert
+    alert('Please enter book tile and author');
   }
 });
 // EVENT DELETE
