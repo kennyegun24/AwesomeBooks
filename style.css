@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0 auto;
-  box-sizing: 0;
 }
 
 .awesomeBooks {
@@ -19,15 +18,12 @@
 
 .books {
   width: 80%;
+  border: 2px solid black;
 }
 
 .newBook:nth-child(odd) {
   background: rgb(172, 171, 171);
   color: white;
-}
-
-.books {
-  border: 2px solid black;
 }
 
 .bookForm {
@@ -46,13 +42,12 @@
   font-weight: 500;
   font-size: 14px;
   gap: 10px;
-  margin-left: 12px;  
+  margin-left: 12px;
 }
 
 .by {
   font-family: sans-serif;
   font-weight: 600;
-
   font-size: 14px;
 }
 
