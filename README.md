@@ -47,16 +47,24 @@ These were linter tests mainly
 
 👤 **Kenny Egun**
 
-- Github: [KennyEgun](https://github.com/kennyegun24)
+- Github: [@KennyEgun](https://github.com/kennyegun24)
+- Twitter: [Kenny_eLiasUTD](https://twitter.com/Kenny_eLiasUTD)
+- LinkedIn: [kenny-egun](https://www.linkedin.com/in/kenny-egun-kennyegun24/)
+
 
 👤 **Ngozika Nwocha**
 
-- GitHub: [NgozikaNwocha](https://github.com/NgozikaNwocha)
+- GitHub: [@NgozikaNwocha](https://github.com/NgozikaNwocha)
+- Twitter: [@NgozikaNwocha](https://twitter.com/NgozikaNwocha)
+- LinkedIn: [NgozikaNwocha] (https://www.linkedin.com/in/ngozikanwocha/)
 
 
 👤 **Selma Ndapanda**
 
-- Github: [SelmaNdapanda](https://github.com/SelmaNdapanda)
+- GitHub: [@SelmaNdapanda](https://github.com/SelmaNdapanda)
+- Twitter: [@SellohBlaq](https://twitter.com/sellohBlaq)
+- LinkedIn: [selma-ndapanda-hamutenya-19169a1ab](https://linkedin.com/in/selma-ndapanda-hamutenya-19169a1ab)
+
 
 ## 🤝 Contributing
 

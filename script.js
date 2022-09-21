@@ -9,8 +9,6 @@ class Book {
   }
 }
 
-// STORE CLASS
-
 // EVENT TO DISPLAY BOOKS
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 // EVENT TO ADD A BOOK
@@ -36,4 +34,49 @@ document.querySelector('.books').addEventListener('click', (e) => {
     Store.removeBook(id);
     UI.deleteBook(e.target);
   }
+});
+
+const list = document.querySelector('.list-main');
+const books = document.querySelector('.books');
+const awesomeBooks = document.querySelector('.awesomeBooks');
+const addNew = document.querySelector('.addNew');
+const bookForm = document.querySelector('.bookForm');
+const contact = document.querySelector('.contactUs');
+const contactUs = document.querySelector('.contact');
+
+list.addEventListener('click', () => {
+  // list.classList.toggle('list1')
+  books.style.display = 'block';
+  awesomeBooks.style.display = 'block';
+  bookForm.style.display = 'none';
+  contactUs.style.display = 'none';
+});
+
+addNew.addEventListener('click', () => {
+  // addNew.classList.toggle('list1')
+  bookForm.style.display = 'block';
+  books.style.display = 'none';
+  awesomeBooks.style.display = 'none';
+  contactUs.style.display = 'none';
+});
+
+contact.addEventListener('click', () => {
+  contactUs.style.display = 'flex';
+  contactUs.innerHTML = `
+    <div class="contactDiv">
+            <h2 class="contactHeader">Contact Information</h2>
+            <p class="contactParagraph">Do you have any questoin or you just wanna say "HI"? <br>
+                You can reach us now!
+            </p>
+
+            <ul class="contactUl">
+                <li>&nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; Our email addresses -@email.com</li>
+                <li>&nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; Our phone numbers +2348025464789, +234 8145464613</li>
+                <li>&nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; Our addresses </li>
+            </ul>
+        </div>
+    `;
+  bookForm.style.display = 'none';
+  awesomeBooks.style.display = 'none';
+  books.style.display = 'none';
 });
